@@ -3,6 +3,7 @@ package com.e_commerce.training.e_commerce.entity;
 import com.e_commerce.training.e_commerce.enums.UserRole;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 
 @Entity
 @Data
@@ -17,6 +18,7 @@ public class User {
 
     private String password;
 
+
     private String name;
 
     private UserRole userRole;
@@ -24,5 +26,27 @@ public class User {
     @Column(columnDefinition = "longblob")
     private byte[] img;
 
+    public String getEmail() {
+        return email;
+    }
 
+    public Long getId() {
+        return id;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public UserRole getUserRole() {
+        return userRole;
+    }
+
+    public byte[] getImg() {
+        return img;
+    }
 }

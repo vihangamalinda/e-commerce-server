@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.Optional;
 
 @RestController
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class AuthController {
 
     private final AuthenticationManager authenticationManager;

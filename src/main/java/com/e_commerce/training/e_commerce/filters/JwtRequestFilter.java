@@ -17,7 +17,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 import java.io.IOException;
 
 @Component
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 public class JwtRequestFilter extends OncePerRequestFilter {
     private final UserDetailsServiceImpl userDetailsService;
 
